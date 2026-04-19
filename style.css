@@ -1,0 +1,105 @@
+:root {
+    --light-bg: #f9f8f7;
+    --text-dark: #343a40;
+    --primary-color: #eb7826;
+    --primary-dark: #e17930;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair+Display", sans-serif;
+    line-height: 1.7;
+    padding: 30px 15px;
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+}
+
+.recipe-finder-container {
+    max-width: 1200px;
+    padding: 0 15px;
+    text-align: center;
+    margin-inline: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-inline: auto;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+
+}
+
+#search-input {
+    padding: 15px 20px;
+    font-size: 1rem;
+    flex-grow: 1;
+    border: 1px solid #ebeef1;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+#search-input:focus {
+    border-color: var(--primary-color);
+}
+
+#search-button {
+    padding: 16px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Playfair+Display", sans-serif;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#search-button:hover {
+    background-color: var(--primary-dark);
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.recipe-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-item h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 15px;
+    margin: 0;
+}
+
+.recipe-item p {
+    padding: 15px;
+    padding-top: 0;
+}
