@@ -103,3 +103,11 @@ h1 {
     padding: 15px;
     padding-top: 0;
 }
+
+.message {
+    margin: 25px auto;
+    padding: 10px;
+    padding-top: 0;
+    max-width: 600px;
+    font-size: 20px;
+}
