@@ -1,0 +1,618 @@
+[
+  {
+    "id": 1,
+    "name": "Cozonac",
+    "ingredients": ["flour", "eggs", "milk", "sugar", "yeast", "walnuts", "cocoa"],
+    "description": "Traditional Romanian sweet bread filled with nuts or cocoa."
+  },
+  {
+    "id": 2,
+    "name": "Papanasi",
+    "ingredients": ["cottage cheese", "flour", "eggs", "sugar", "jam", "sour cream"],
+    "description": "Fried or boiled cheese doughnuts topped with cream and jam."
+  },
+  {
+    "id": 3,
+    "name": "Placinta cu mere",
+    "ingredients": ["apples", "flour", "sugar", "butter", "cinnamon"],
+    "description": "Romanian-style apple pie with a soft pastry crust."
+  },
+  {
+    "id": 4,
+    "name": "Placinta cu branza dulce",
+    "ingredients": ["sweet cheese", "eggs", "sugar", "flour"],
+    "description": "Sweet cheese-filled pastry, soft and slightly tangy."
+  },
+  {
+    "id": 5,
+    "name": "Placinta cu dovleac",
+    "ingredients": ["pumpkin", "sugar", "flour", "cinnamon"],
+    "description": "Sweet pumpkin pie with aromatic spices."
+  },
+  {
+    "id": 6,
+    "name": "Gogosi",
+    "ingredients": ["flour", "yeast", "sugar", "oil"],
+    "description": "Fluffy fried doughnuts dusted with sugar."
+  },
+  {
+    "id": 7,
+    "name": "Cornulete",
+    "ingredients": ["flour", "butter", "sugar", "jam"],
+    "description": "Small crescent cookies filled with jam."
+  },
+  {
+    "id": 8,
+    "name": "Pasca",
+    "ingredients": ["cheese", "eggs", "sugar", "flour", "raisins"],
+    "description": "Traditional Easter dessert with sweet cheese filling."
+  },
+  {
+    "id": 9,
+    "name": "Salam de biscuiti",
+    "ingredients": ["biscuits", "cocoa", "butter", "sugar", "milk"],
+    "description": "No-bake chocolate biscuit dessert shaped like salami."
+  },
+  {
+    "id": 10,
+    "name": "Clatite",
+    "ingredients": ["flour", "milk", "eggs", "sugar"],
+    "description": "Thin crepes served with jam or chocolate."
+  },
+
+  {
+    "id": 11,
+    "name": "Negresa",
+    "ingredients": ["cocoa", "flour", "sugar", "eggs", "butter"],
+    "description": "Rich Romanian chocolate brownie cake."
+  },
+  {
+    "id": 12,
+    "name": "Chec",
+    "ingredients": ["flour", "eggs", "sugar", "oil"],
+    "description": "Simple fluffy loaf cake."
+  },
+  {
+    "id": 13,
+    "name": "Orez cu lapte",
+    "ingredients": ["rice", "milk", "sugar", "vanilla"],
+    "description": "Creamy rice pudding with a hint of vanilla."
+  },
+  {
+    "id": 14,
+    "name": "Mucenici",
+    "ingredients": ["flour", "honey", "walnuts"],
+    "description": "Sweet symbolic pastries soaked in syrup."
+  },
+  {
+    "id": 15,
+    "name": "Coliva",
+    "ingredients": ["wheat", "sugar", "nuts", "cocoa"],
+    "description": "Sweet boiled wheat dessert with nuts."
+  },
+
+  {
+    "id": 16,
+    "name": "Amandina",
+    "ingredients": ["chocolate", "flour", "eggs", "sugar", "rum"],
+    "description": "Syrupy chocolate cake with rich cream."
+  },
+  {
+    "id": 17,
+    "name": "Albinita",
+    "ingredients": ["honey", "flour", "milk", "sugar"],
+    "description": "Layered honey cake with cream filling."
+  },
+  {
+    "id": 18,
+    "name": "Savarina",
+    "ingredients": ["flour", "eggs", "sugar", "syrup", "cream"],
+    "description": "Sponge cake soaked in syrup and topped with cream."
+  },
+  {
+    "id": 19,
+    "name": "Cremsnit",
+    "ingredients": ["puff pastry", "milk", "eggs", "sugar"],
+    "description": "Classic custard slice with crispy layers."
+  },
+  {
+    "id": 20,
+    "name": "Ecler",
+    "ingredients": ["choux pastry", "cream", "chocolate"],
+    "description": "Cream-filled pastry topped with chocolate glaze."
+  },
+
+  {
+    "id": 21,
+    "name": "Tort diplomat",
+    "ingredients": ["cream", "fruit", "gelatin", "sponge cake"],
+    "description": "Light fruit cream cake."
+  },
+  {
+    "id": 22,
+    "name": "Tort de mere",
+    "ingredients": ["apples", "sugar", "flour", "eggs"],
+    "description": "Moist apple-based cake."
+  },
+  {
+    "id": 23,
+    "name": "Tort Joffre",
+    "ingredients": ["chocolate", "butter", "eggs", "sugar"],
+    "description": "Dense chocolate cake named after a French marshal."
+  },
+  {
+    "id": 24,
+    "name": "Tort cu nuca",
+    "ingredients": ["walnuts", "eggs", "sugar"],
+    "description": "Rich walnut-based cake."
+  },
+  {
+    "id": 25,
+    "name": "Tort cu ciocolata",
+    "ingredients": ["chocolate", "flour", "eggs", "sugar"],
+    "description": "Classic Romanian chocolate cake."
+  },
+
+  {
+    "id": 26,
+    "name": "Fursecuri cu gem",
+    "ingredients": ["flour", "butter", "sugar", "jam"],
+    "description": "Soft cookies filled with jam."
+  },
+  {
+    "id": 27,
+    "name": "Nuci umplute",
+    "ingredients": ["flour", "sugar", "cocoa", "butter"],
+    "description": "Walnut-shaped cookies filled with cream."
+  },
+  {
+    "id": 28,
+    "name": "Foi fragede",
+    "ingredients": ["flour", "butter", "sugar"],
+    "description": "Layered pastry sheets with cream."
+  },
+  {
+    "id": 29,
+    "name": "Bomboane de casa",
+    "ingredients": ["milk", "sugar", "cocoa"],
+    "description": "Homemade sweet candies."
+  },
+  {
+    "id": 30,
+    "name": "Prajitura tavalita",
+    "ingredients": ["cake", "chocolate", "coconut"],
+    "description": "Cake cubes dipped in chocolate and coconut."
+  },
+
+  {
+    "id": 31,
+    "name": "Prajitura cu gris",
+    "ingredients": ["semolina", "milk", "sugar"],
+    "description": "Layered cake with semolina cream."
+  },
+  {
+    "id": 32,
+    "name": "Prajitura Jerbo",
+    "ingredients": ["walnuts", "jam", "chocolate"],
+    "description": "Layered cake with walnut and jam filling."
+  },
+  {
+    "id": 33,
+    "name": "Prajitura Tosca",
+    "ingredients": ["biscuits", "cream", "chocolate"],
+    "description": "Layered dessert with cream and chocolate topping."
+  },
+  {
+    "id": 34,
+    "name": "Prajitura Figaro",
+    "ingredients": ["walnuts", "jam", "flour"],
+    "description": "Nutty layered dessert."
+  },
+  {
+    "id": 35,
+    "name": "Prajitura Alba ca Zapada",
+    "ingredients": ["milk", "flour", "sugar"],
+    "description": "Soft layered cake with lemon cream."
+  },
+
+  {
+    "id": 36,
+    "name": "Lapte de pasare",
+    "ingredients": ["milk", "eggs", "sugar"],
+    "description": "Floating meringue in vanilla custard."
+  },
+  {
+    "id": 37,
+    "name": "Budinca de gris",
+    "ingredients": ["semolina", "milk", "sugar"],
+    "description": "Creamy semolina pudding."
+  },
+  {
+    "id": 38,
+    "name": "Budinca de orez",
+    "ingredients": ["rice", "milk", "sugar"],
+    "description": "Baked rice pudding."
+  },
+  {
+    "id": 39,
+    "name": "Placinta dobrogeana dulce",
+    "ingredients": ["cheese", "flour", "eggs"],
+    "description": "Layered sweet cheese pie."
+  },
+  {
+    "id": 40,
+    "name": "Inghetata de casa",
+    "ingredients": ["milk", "cream", "sugar"],
+    "description": "Traditional homemade ice cream."
+  },
+
+  {
+    "id": 41,
+    "name": "Dulceata cu clatite",
+    "ingredients": ["fruit jam", "crepes"],
+    "description": "Crepes served with fruit preserves."
+  },
+  {
+    "id": 42,
+    "name": "Cozonac cu rahat",
+    "ingredients": ["flour", "sugar", "turkish delight"],
+    "description": "Sweet bread filled with candied cubes."
+  },
+  {
+    "id": 43,
+    "name": "Placinta ardeleneasca",
+    "ingredients": ["flour", "cheese", "eggs"],
+    "description": "Transylvanian-style pie."
+  },
+  {
+    "id": 44,
+    "name": "Turta dulce",
+    "ingredients": ["honey", "flour", "spices"],
+    "description": "Romanian gingerbread cookies."
+  },
+  {
+    "id": 45,
+    "name": "Papanasi fierti",
+    "ingredients": ["cheese", "flour", "eggs"],
+    "description": "Boiled version of cheese dumplings."
+  },
+
+  {
+    "id": 46,
+    "name": "Colac dulce",
+    "ingredients": ["flour", "milk", "sugar"],
+    "description": "Sweet braided bread."
+  },
+  {
+    "id": 47,
+    "name": "Covrigi dulci",
+    "ingredients": ["flour", "sugar", "yeast"],
+    "description": "Sweet pretzels."
+  },
+  {
+    "id": 48,
+    "name": "Placinta cu visine",
+    "ingredients": ["cherries", "flour", "sugar"],
+    "description": "Sour cherry pie."
+  },
+  {
+    "id": 49,
+    "name": "Cozonac moldovenesc",
+    "ingredients": ["flour", "eggs", "sugar", "walnuts"],
+    "description": "Rich Moldavian-style sweet bread."
+  },
+
+  {
+    "id": 50,
+    "name": "Tiramisu",
+    "ingredients": ["mascarpone", "coffee", "eggs", "sugar", "cocoa"],
+    "description": "Italian layered dessert with coffee flavor."
+  },
+
+  {
+    "id": 51,
+    "name": "Cheesecake",
+    "ingredients": ["cream cheese", "sugar", "eggs", "crust"],
+    "description": "Creamy baked or chilled cheese dessert."
+  },
+  {
+    "id": 52,
+    "name": "Black Forest Cake",
+    "ingredients": ["chocolate", "cherries", "cream"],
+    "description": "Chocolate cake layered with cherries and cream."
+  },
+  {
+    "id": 53,
+    "name": "Red Velvet Cake",
+    "ingredients": ["cocoa", "buttermilk", "cream cheese"],
+    "description": "Soft red cake with cream cheese frosting."
+  },
+  {
+    "id": 54,
+    "name": "Carrot Cake",
+    "ingredients": ["carrots", "flour", "sugar", "cream cheese"],
+    "description": "Moist cake with grated carrots."
+  },
+  {
+    "id": 55,
+    "name": "Sachertorte",
+    "ingredients": ["chocolate", "apricot jam", "eggs"],
+    "description": "Dense Austrian chocolate cake."
+  },
+
+  {
+    "id": 56,
+    "name": "Tres Leches",
+    "ingredients": ["milk", "eggs", "sugar"],
+    "description": "Cake soaked in three types of milk."
+  },
+  {
+    "id": 57,
+    "name": "Creme brulee",
+    "ingredients": ["cream", "sugar", "eggs"],
+    "description": "Custard dessert with caramelized sugar crust."
+  },
+  {
+    "id": 58,
+    "name": "Flan",
+    "ingredients": ["milk", "eggs", "sugar"],
+    "description": "Silky caramel custard."
+  },
+  {
+    "id": 59,
+    "name": "Panna cotta",
+    "ingredients": ["cream", "gelatin", "sugar"],
+    "description": "Italian creamy chilled dessert."
+  },
+  {
+    "id": 60,
+    "name": "Bread pudding",
+    "ingredients": ["bread", "milk", "eggs", "sugar"],
+    "description": "Baked dessert made from soaked bread."
+  },
+
+  {
+    "id": 61,
+    "name": "Trifle",
+    "ingredients": ["cake", "cream", "fruit"],
+    "description": "Layered dessert with cream and fruit."
+  },
+  {
+    "id": 62,
+    "name": "Banoffee pie",
+    "ingredients": ["banana", "caramel", "cream"],
+    "description": "Pie with banana and toffee flavors."
+  },
+  {
+    "id": 63,
+    "name": "Key lime pie",
+    "ingredients": ["lime", "condensed milk", "crust"],
+    "description": "Tangy citrus pie."
+  },
+  {
+    "id": 64,
+    "name": "Churros",
+    "ingredients": ["flour", "oil", "sugar"],
+    "description": "Fried dough sticks with sugar."
+  },
+  {
+    "id": 65,
+    "name": "Donuts",
+    "ingredients": ["flour", "yeast", "sugar"],
+    "description": "Classic fried sweet rings."
+  },
+
+  {
+    "id": 66,
+    "name": "Beignets",
+    "ingredients": ["flour", "yeast", "sugar"],
+    "description": "French-style fried pastries."
+  },
+  {
+    "id": 67,
+    "name": "Jalebi",
+    "ingredients": ["flour", "syrup", "oil"],
+    "description": "Sweet spiral soaked in syrup."
+  },
+  {
+    "id": 68,
+    "name": "Gulab jamun",
+    "ingredients": ["milk solids", "syrup"],
+    "description": "Soft fried balls soaked in syrup."
+  },
+  {
+    "id": 69,
+    "name": "Croissant",
+    "ingredients": ["flour", "butter", "yeast"],
+    "description": "Flaky layered pastry."
+  },
+  {
+    "id": 70,
+    "name": "Mille-feuille",
+    "ingredients": ["puff pastry", "cream"],
+    "description": "Layered pastry with cream."
+  },
+
+  {
+    "id": 71,
+    "name": "Apple strudel",
+    "ingredients": ["apples", "pastry", "sugar"],
+    "description": "Thin pastry filled with apples."
+  },
+  {
+    "id": 72,
+    "name": "Baklava",
+    "ingredients": ["phyllo", "nuts", "honey"],
+    "description": "Sweet layered pastry with syrup."
+  },
+  {
+    "id": 73,
+    "name": "Brownies",
+    "ingredients": ["chocolate", "flour", "sugar"],
+    "description": "Dense chocolate squares."
+  },
+  {
+    "id": 74,
+    "name": "Chocolate mousse",
+    "ingredients": ["chocolate", "cream", "eggs"],
+    "description": "Light airy chocolate dessert."
+  },
+  {
+    "id": 75,
+    "name": "Fudge",
+    "ingredients": ["sugar", "milk", "butter"],
+    "description": "Soft chocolate candy."
+  },
+
+  {
+    "id": 76,
+    "name": "Ice cream",
+    "ingredients": ["milk", "cream", "sugar"],
+    "description": "Frozen creamy dessert."
+  },
+  {
+    "id": 77,
+    "name": "Gelato",
+    "ingredients": ["milk", "sugar"],
+    "description": "Italian-style ice cream."
+  },
+  {
+    "id": 78,
+    "name": "Sorbet",
+    "ingredients": ["fruit", "sugar", "water"],
+    "description": "Frozen fruit dessert."
+  },
+  {
+    "id": 79,
+    "name": "Kulfi",
+    "ingredients": ["milk", "sugar"],
+    "description": "Dense Indian ice cream."
+  },
+  {
+    "id": 80,
+    "name": "Mochi ice cream",
+    "ingredients": ["rice dough", "ice cream"],
+    "description": "Ice cream wrapped in soft rice dough."
+  },
+
+  {
+    "id": 81,
+    "name": "Frozen yogurt",
+    "ingredients": ["yogurt", "sugar"],
+    "description": "Tangy frozen dessert."
+  },
+  {
+    "id": 82,
+    "name": "Mango sticky rice",
+    "ingredients": ["rice", "coconut milk", "mango"],
+    "description": "Thai dessert with sweet rice and mango."
+  },
+  {
+    "id": 83,
+    "name": "Pavlova",
+    "ingredients": ["egg whites", "sugar", "fruit"],
+    "description": "Meringue dessert with fruit topping."
+  },
+  {
+    "id": 84,
+    "name": "Lamingtons",
+    "ingredients": ["sponge cake", "chocolate", "coconut"],
+    "description": "Australian sponge cake coated in chocolate and coconut."
+  },
+  {
+    "id": 85,
+    "name": "Profiteroles",
+    "ingredients": ["choux pastry", "cream", "chocolate"],
+    "description": "Small pastry balls filled with cream and topped with chocolate."
+  },
+  {
+    "id": 86,
+    "name": "Souffle",
+    "ingredients": ["eggs", "sugar", "chocolate"],
+    "description": "Light and airy baked dessert."
+  },
+  {
+    "id": 87,
+    "name": "Macarons",
+    "ingredients": ["almond flour", "egg whites", "sugar"],
+    "description": "Delicate French sandwich cookies with filling."
+  },
+  {
+    "id": 88,
+    "name": "Cannoli",
+    "ingredients": ["pastry shells", "ricotta", "sugar"],
+    "description": "Italian pastry tubes filled with sweet ricotta cream."
+  },
+  {
+    "id": 89,
+    "name": "Crepes Suzette",
+    "ingredients": ["crepes", "orange sauce", "sugar"],
+    "description": "Crepes served with a caramelized orange sauce."
+  },
+  {
+    "id": 90,
+    "name": "Sticky Toffee Pudding",
+    "ingredients": ["dates", "flour", "sugar", "cream"],
+    "description": "Moist sponge cake served with toffee sauce."
+  },
+  {
+    "id": 91,
+    "name": "Eton Mess",
+    "ingredients": ["meringue", "cream", "strawberries"],
+    "description": "British dessert with crushed meringue and cream."
+  },
+  {
+    "id": 92,
+    "name": "Rice Krispie Treats",
+    "ingredients": ["rice cereal", "marshmallows", "butter"],
+    "description": "Chewy bars made with cereal and melted marshmallows."
+  },
+  {
+    "id": 93,
+    "name": "Blondies",
+    "ingredients": ["flour", "butter", "brown sugar", "eggs"],
+    "description": "Vanilla-based brownie alternative."
+  },
+  {
+    "id": 94,
+    "name": "Cupcakes",
+    "ingredients": ["flour", "sugar", "eggs", "butter"],
+    "description": "Small individual cakes with frosting."
+  },
+  {
+    "id": 95,
+    "name": "Chiffon Cake",
+    "ingredients": ["flour", "eggs", "sugar", "oil"],
+    "description": "Light and airy sponge cake."
+  },
+  {
+    "id": 96,
+    "name": "Opera Cake",
+    "ingredients": ["almond sponge", "coffee", "chocolate"],
+    "description": "Layered French cake with coffee and chocolate flavors."
+  },
+  {
+    "id": 97,
+    "name": "Basque Cheesecake",
+    "ingredients": ["cream cheese", "eggs", "sugar", "cream"],
+    "description": "Burnt-top creamy cheesecake."
+  },
+  {
+    "id": 98,
+    "name": "Pastel de Nata",
+    "ingredients": ["puff pastry", "custard", "sugar"],
+    "description": "Portuguese custard tart."
+  },
+  {
+    "id": 99,
+    "name": "Halo-Halo",
+    "ingredients": ["ice", "milk", "fruit", "beans"],
+    "description": "Filipino mixed dessert with shaved ice."
+  },
+  {
+    "id": 100,
+    "name": "Bingsu",
+    "ingredients": ["shaved ice", "milk", "fruit", "sweet toppings"],
+    "description": "Korean shaved ice dessert with toppings."
+  }
+]
