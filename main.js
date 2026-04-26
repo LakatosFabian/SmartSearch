@@ -4,8 +4,21 @@ const resultsGrid = document.getElementById("results-grid");
 const form = document.getElementById("search-form");
 const input = document.getElementById("search-input");
 const autocompleteList = document.getElementById("autocomplete-list");
+const SCORE_WEIGHTS = {
+  nameExact: 100,
+  nameStarts: 60,
+  nameIncludes: 40,
+
+  ingredientExact: 50,
+  ingredientPartial: 20,
+
+  description: 10,
+
+  allWordsBonus: 80
+};
 
 
+// load recipes from json file
 fetch("recipes.json")
   .then(response => response.json())
   .then(data => {
@@ -15,6 +28,7 @@ fetch("recipes.json")
   .catch(error => console.error("Error loading recipes:", error));
 
 
+// displays recipes on screen
 function displayRecipes(recipesArray) {
   resultsGrid.innerHTML = "";
 
@@ -33,23 +47,85 @@ function displayRecipes(recipesArray) {
 }
 
 
+// splits search
+function normalizeQuery(query) {
+  return query
+    .toLowerCase()
+    .trim()
+    .split(/\s+/)
+    .filter(word => word.length > 0);
+}
+
+
+// scoring system for search relevance
+function getScore(recipe, queryWords) {
+  let score = 0;
+
+  const name = recipe.name.toLowerCase();
+  const description = recipe.description.toLowerCase();
+  const ingredients = recipe.ingredients.map(i => i.toLowerCase());
+
+  queryWords.forEach(word => {
+
+    // name scoring
+    if (name === word) {
+      score += SCORE_WEIGHTS.nameExact;
+    } else if (name.startsWith(word)) {
+      score += SCORE_WEIGHTS.nameStarts;
+    } else if (name.includes(word)) {
+      score += SCORE_WEIGHTS.nameIncludes;
+    }
+
+    // ingredient scoring
+    const ingredientMatch = ingredients.some(i => i === word);
+    const ingredientPartial = ingredients.some(i => i.includes(word));
+
+    if (ingredientMatch) {
+      score += SCORE_WEIGHTS.ingredientExact;
+    } else if (ingredientPartial) {
+      score += SCORE_WEIGHTS.ingredientPartial;
+    }
+
+    // description scoring
+    if (description.includes(word)) {
+      score += SCORE_WEIGHTS.description;
+    }
+  });
+
+  // bonus if all words match somewhere
+  const allWordsMatch = queryWords.every(word =>
+    name.includes(word) ||
+    description.includes(word) ||
+    ingredients.some(i => i.includes(word))
+  );
+
+  if (allWordsMatch && queryWords.length > 1) {
+    score += SCORE_WEIGHTS.allWordsBonus;
+  }
+
+  return score;
+}
+
+
+// handles search submit
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const query = input.value.toLowerCase();
+  const queryWords = normalizeQuery(input.value);
 
-  const filtered = recipes.filter(recipe => {
-    return (
-      recipe.name.toLowerCase().includes(query) ||
-      recipe.ingredients.some(ingredient =>
-        ingredient.toLowerCase().includes(query)
-      )
-    );
-  });
+  const scored = recipes
+    .map(recipe => ({
+      recipe,
+      score: getScore(recipe, queryWords)
+    }))
+    .sort((a, b) => b.score - a.score)
+    .map(item => item.recipe);
 
-  displayRecipes(filtered);
+  displayRecipes(scored);
 });
 
+
+// autocomplete input logic
 let debounceTimeout;
 
 input.addEventListener("input", (e) => {
@@ -81,6 +157,8 @@ input.addEventListener("input", (e) => {
   }, 150);
 });
 
+
+// close autocomplete when clicking outside
 document.addEventListener("click", (e) => {
   if (!e.target.closest(".search-wrapper")) {
     autocompleteList.innerHTML = "";
