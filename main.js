@@ -50,28 +50,35 @@ form.addEventListener("submit", function (e) {
   displayRecipes(filtered);
 });
 
-input.addEventListener("input", () => {
-  const query = input.value.toLowerCase();
-  autocompleteList.innerHTML = "";
+let debounceTimeout;
 
-  if (!query) return;
+input.addEventListener("input", (e) => {
+  clearTimeout(debounceTimeout);
 
-  const matches = recipes.filter(recipe =>
-    recipe.name.toLowerCase().includes(query)
-  );
+  const query = e.target.value.toLowerCase().trim();
 
-  matches.slice(0, 5).forEach(recipe => {
-    const li = document.createElement("li");
-    li.textContent = recipe.name;
+  debounceTimeout = setTimeout(() => {
+    autocompleteList.innerHTML = "";
 
-    li.addEventListener("click", () => {
-      input.value = recipe.name;
-      autocompleteList.innerHTML = "";
-      displayRecipes([recipe]);
+    if (!query) return;
+
+    const matches = recipes.filter(recipe =>
+      recipe.name.toLowerCase().includes(query)
+    );
+
+    matches.slice(0, 5).forEach(recipe => {
+      const li = document.createElement("li");
+      li.textContent = recipe.name;
+
+      li.addEventListener("click", () => {
+        input.value = recipe.name;
+        autocompleteList.innerHTML = "";
+        displayRecipes([recipe]);
+      });
+
+      autocompleteList.appendChild(li);
     });
-
-    autocompleteList.appendChild(li);
-  });
+  }, 150);
 });
 
 document.addEventListener("click", (e) => {
