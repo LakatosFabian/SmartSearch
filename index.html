@@ -19,17 +19,15 @@
 
 
         <form id="search-form" class="search-box">
-            <input type="text" id="search-input" placeholder="Search by name or ingredients">
-            
+            <div class="search-wrapper">
+                <input type="text" id="search-input" placeholder="Search by name or ingredients">
+                <ul id="autocomplete-list"></ul>
+            </div>
+
             <button type="submit" id="search-button">Search</button>
         </form>
 
-        <div class="results-grid" id="results-grid">
-            <!-- <div class="recipe-item">
-            <h3>Espresso</h3>
-            <p>Rich, bold, and perfectly pulled from single-origin beans.</p>
-            </div>> -->
-        </div>
+        <div class="results-grid" id="results-grid"></div>
 
     </div>
     <script src="main.js"></script>

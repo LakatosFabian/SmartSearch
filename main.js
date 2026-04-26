@@ -3,6 +3,7 @@ let recipes = [];
 const resultsGrid = document.getElementById("results-grid");
 const form = document.getElementById("search-form");
 const input = document.getElementById("search-input");
+const autocompleteList = document.getElementById("autocomplete-list");
 
 
 fetch("recipes.json")
@@ -47,4 +48,34 @@ form.addEventListener("submit", function (e) {
   });
 
   displayRecipes(filtered);
+});
+
+input.addEventListener("input", () => {
+  const query = input.value.toLowerCase();
+  autocompleteList.innerHTML = "";
+
+  if (!query) return;
+
+  const matches = recipes.filter(recipe =>
+    recipe.name.toLowerCase().includes(query)
+  );
+
+  matches.slice(0, 5).forEach(recipe => {
+    const li = document.createElement("li");
+    li.textContent = recipe.name;
+
+    li.addEventListener("click", () => {
+      input.value = recipe.name;
+      autocompleteList.innerHTML = "";
+      displayRecipes([recipe]);
+    });
+
+    autocompleteList.appendChild(li);
+  });
+});
+
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".search-wrapper")) {
+    autocompleteList.innerHTML = "";
+  }
 });
