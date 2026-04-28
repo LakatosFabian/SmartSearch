@@ -120,11 +120,15 @@ function getScore(recipe, queryWords) {
 
   // bonus if all words match somewhere
   const allWordsMatch = queryWords.every(word =>
-    name.includes(word) ||
-    description.includes(word) ||
-    ingredients.some(i => i.includes(word)) ||
-    ingredients.some(i => similarity(i, word) > 0.6)
-  );
+  name.includes(word) ||
+  name.split(" ").some(w => similarity(w, word) > 0.6) ||
+
+  description.includes(word) ||
+  description.split(" ").some(w => similarity(w, word) > 0.6) ||
+
+  ingredients.some(i => i.includes(word)) ||
+  ingredients.some(i => similarity(i, word) > 0.6)
+);
 
   if (allWordsMatch && queryWords.length > 1) {
     score += SCORE_WEIGHTS.allWordsBonus;
@@ -165,11 +169,20 @@ input.addEventListener("input", (e) => {
 
     if (!query) return;
 
-    const matches = recipes.filter(recipe =>
-      recipe.name.toLowerCase().includes(query)
-    );
+    const queryWords = normalizeQuery(query);
 
-    matches.slice(0, 5).forEach(recipe => {
+    const scored = recipes
+      .map(recipe => ({
+        recipe,
+        score: getScore(recipe, queryWords)
+      }))
+      .filter(item => item.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 5);
+
+    scored.forEach(item => {
+      const recipe = item.recipe;
+
       const li = document.createElement("li");
       li.textContent = recipe.name;
 
